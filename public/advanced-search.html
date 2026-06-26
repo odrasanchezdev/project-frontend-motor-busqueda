@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style_advanced-search.css" />
+
+    <title>Proyecto para Edutin: Búsqueda avanzada | Odra Sanchez</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-links">
+          <a href="./index.html">Búsqueda</a>
+          <a href="./search-images.html">Imágenes</a>
+        </div>
+
+        <button
+          class="menu-button"
+          type="button"
+          aria-label="Aplicaciones de Google (decorativo)"
+        >
+          <img
+            src="./assets/img/menu-grid-svgrepo-com.svg"
+            alt=""
+            aria-hidden="true"
+          />
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <form id="advanced" action="https://www.google.com/search" method="get">
+        <h1>Búsqueda avanzada</h1>
+
+        <div class="fila">
+          <label for="all">
+            Encontrar páginas con... <strong>todas estas palabras:</strong>
+          </label>
+          <input type="text" id="all" name="as_q" />
+        </div>
+
+        <div class="fila">
+          <label for="exact">
+            Buscar páginas con... <strong>esta palabra o frase exacta:</strong>
+          </label>
+          <input type="text" id="exact" name="as_epq" />
+        </div>
+
+        <div class="fila">
+          <label for="any">
+            Encontrar páginas con...
+            <strong>cualquiera de estas palabras:</strong>
+          </label>
+          <input type="text" id="any" name="as_oq" />
+        </div>
+
+        <div class="fila">
+          <label for="none">
+            Encontrar páginas con... <strong>ninguna de estas palabras:</strong>
+          </label>
+          <input type="text" id="none" name="as_eq" />
+        </div>
+
+        <button type="submit">Búsqueda avanzada</button>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+:root {
+  --black-1: #212529;
+  --black-2: #495057;
+  --white: #f8f9fa;
+  --gray: #6c757d;
+  --blue-1: #1e88e5;
+  --blue-2: #42a5f5;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+/* Universal Selector: resets all elements */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--black-1);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Barra de navegación */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 15px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: var(--gray);
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: var(--white);
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.menu-button img {
+  width: 20px;
+  height: 20px;
+}
+
+
+/* logo Doodle */
+.logo {
+  width: clamp(350px, 50vw, 600px);
+  display: block;
+  margin: 0 auto;
+}

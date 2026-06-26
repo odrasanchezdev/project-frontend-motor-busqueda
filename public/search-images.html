@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style_search-img.css" />
+    
+    <title>Proyecto para Edutin: Buscador Imágenes | Odra Sanchez</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-links">
+          <a href="./index.html">Búsqueda</a>
+          <a href="./advanced-search.html">Avanzada</a>
+        </div>
+
+        <button
+          class="menu-button"
+          type="button"
+          aria-label="Aplicaciones de Google (decorativo)">
+          <img
+            src="./assets/img/menu-grid-svgrepo-com.svg"
+            alt=""
+            aria-hidden="true"/>
+        </button>
+      </nav>
+    </header>
+
+    
+    <main>
+      <form action="https://www.google.com/search" method="get" id="search-images">
+      <img
+        class="logo"
+        src="https://www.google.com/logos/doodles/2026/world-cup-2026-mexico-match-day-june-11-6753651837111090.2-2x.png"
+        alt="Doodle Mexico World Cup 2026"
+      />
+      <input type="text" name="q" placeholder="Buscar imágenes" required />
+      <input type="hidden" name="tbm" value="isch">
+
+      <div class="botones">
+        <button type="submit">Buscar imágenes</button>
+      </div>
+    </form>
+    </main>
+  </body>
+</html>

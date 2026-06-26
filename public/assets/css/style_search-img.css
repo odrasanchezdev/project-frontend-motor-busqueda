@@ -1,0 +1,41 @@
+:root {
+  --black-1: #212529;
+  --black-2: #495057;
+  --white: #f8f9fa;
+  --gray: #6c757d;
+  --blue-1: #1e88e5;
+  --blue-2: #42a5f5;
+}
+
+/******* SEARCH-IMAGE.HTML *******/
+/* Formulario search-images */
+#search-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+#search-images input {
+  width: clamp(300px, 90vw, 700px);
+  padding: clamp(1rem, 0.5vw, 2rem);
+  border-radius: 25px;
+}
+
+.botones {
+  display: flex;
+  gap: 36px;
+}
+
+.botones button {
+  padding: 8px 24px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: var(--black-2);
+  color: var(--white);
+}
+
+.botones button:hover {
+  border: 1px solid var(--white);
+  transition: all ease-in-out 0.3s;
+}
